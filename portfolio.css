@@ -1,0 +1,268 @@
+* {
+    padding:0;
+    margin:0;
+    scroll-behavior:smooth;
+}
+html{
+    font-size:18px;
+}
+body {
+    font-size:18px;
+    
+}
+.container {
+    
+}
+#header {
+    background-color:ghostwhite;
+    height:3.5em;
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    box-shadow:0px 1px 25px -5px;
+    z-index:5;
+    position:relative;
+}
+a{
+    color:#4A001F;
+    text-decoration:none;
+}
+a:active{
+    color:#4A001F;
+}
+
+#img-logo {
+    height:3.7em;
+    width:4em;
+}
+#logo {
+    
+}
+#study-svg{
+    height:32px;
+    width:32px;
+    display:flex;
+    align-items:flex-end;
+}
+
+#nav {
+       
+}
+h2,p {
+    color:#4A001F;
+}
+ul{
+    display:inline;
+    
+}
+li {
+    display:inline;
+    margin-right:5px;
+    
+}
+main {
+    z-index:-1;
+    position:relative;
+}
+#intro {
+    display:flex;
+    text-align:center;
+    align-content:center;
+    justify-content:center;
+}
+.intro-text {
+    color:#fff;
+    margin:auto;
+    z-index:0;
+    align-items:center;
+    display:flex;
+}
+.img-container {
+    background-image:url("codewall.jpg");
+    background-repeat:no-repeat;
+    height:450px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-size:cover;
+    background-position:center;
+    z-index:-1;
+    opacity:0.7;
+
+}
+#projects {
+    height:auto;
+    width:100%;
+    background-color:#eeeeee;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    color:#292f33;
+    
+}
+.project-header {
+    background-color:#eeeeee;
+    width:100%;
+    height:auto;
+    text-align:center;
+    box-shadow:0px 1px 10px -6px;
+    line-height:1.8;
+    
+}
+.project-card-container{
+    display:flex;
+    flex-direction:column;
+}
+.project-card {
+    height:auto;
+    width:75vw;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-top:10px;
+    margin-bottom:10px;
+    
+    
+    
+}
+.project-img {
+    height:250px;
+    width:100%;
+    border:1px solid black;
+    border-bottom:0px;
+    background-image:url("game.jpg");
+    background-size:cover;
+}
+.project-label {
+    height:auto;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    line-height:2;
+    background-color:white;
+    border:1px solid black;
+    color:#292f33;
+}
+.footer{
+height:auto;
+width:100%;
+background-color:ghostwhite;
+}
+.footer-contact{
+    display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+width:100%;
+}
+#contact-text {
+    margin-bottom:15px;
+    box-shadow:0px 5px 10px -10px black;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    color:#4A001F;
+    line-height:1.8;
+}
+
+
+input {
+    display:flex;
+    flex-direction:column;
+    width:75vw;
+    margin-bottom:5px;
+    border:1px solid black;
+    border-radius:3px;
+    line-height:2;
+    font-size:18px;
+    background-color:#4A001F;
+    color:ghostwhite;
+}
+input::placeholder{
+    color:ghostwhite;
+}
+textarea{
+    width:75vw;
+    background-color:#4A001F;
+    color:ghostwhite;
+}
+textarea::placeholder{
+    color:ghostwhite;
+}
+.footer-end{
+    height:auto;
+    background-color:#333;
+    width:100%;
+    color:azure;
+    font-size:14px;
+    display:flex;
+    justify-content:center;
+}
+/*========= Media Queries! ==========*/
+
+/* Mobile layout */
+@media only screen and (min-width:590px) {
+    .project-img{
+        height:25em;
+    }
+}
+
+
+/* Tablet layout */
+@Media only screen and (min-width:768px) {
+    .project-card-container {
+        display:flex;
+        flex-direction:row;
+
+        
+    }
+    .project-card{
+        display:flex;
+        justify-content:space-around;
+        width:45vw;
+        margin-right:1em;
+        margin-left:1em;
+    }
+}
+
+/*
+@media only screen and (min-width:425px) {
+    #intro {
+        background-image:url("coding-mobileL.jpeg");
+        width:100%;
+        background-size:cover;
+        height:18em;
+        
+    }
+    .intro-text {
+        margin-bottom:175px;
+    }
+}
+
+@media only screen and (min-width:600px) {
+    #intro {
+        background-image:url("coding-small.jpeg");
+        width:100%;
+        background-size:cover;
+        height:25em;
+        
+        
+    }
+    .intro-text {
+        margin-bottom:200px;
+    }
+}
+@media only screen and (min-width:768px) {
+    #intro {
+        background-image:url("coding-tablet-normal.jpeg");
+        width:100%;
+        min-height:auto;
+
+    }
+}
+
+*/
